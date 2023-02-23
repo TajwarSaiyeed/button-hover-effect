@@ -1,0 +1,58 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: none;
+    outline: none;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: #f1f2f6;
+}
+
+.social-buttons {
+    /* width: 400px; */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.social-buttons button {
+    cursor: pointer;
+    width: 150px;
+    height: 150px;
+    color: #fff;
+    background: transparent;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.3s ease;
+}
+
+.social-buttons button:active{
+    transform: scale(0.8);
+}
+
+
+.social-buttons button .bg {
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    background: #4135d6;
+    border-radius: 25%;
+    pointer-events: none;
+    box-shadow: 0 0 30px #4135d658;
+}
+
+.social-buttons button i {
+   position: relative;
+   z-index: 10;
+   font-size: 28px;
+   pointer-events: none;
+}
